@@ -1,4 +1,34 @@
 @import url('https://fonts.cdnfonts.com/css/gotham');
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  }
 /* Reset y estilos generales */
 * {
     margin: 0;
@@ -9,7 +39,7 @@
 body {
     font-family: 'Gotham', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #343a40;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease;
@@ -24,20 +54,36 @@ body {
 
 /* Header y navegación */
 header {
-    background-color: #00006c;
-    color: rgb(0, 0, 0);
-    padding: 1rem 0;
+    background-color: #131636;
+    color: rgb(255, 255, 255);
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: -10px;
+    transition: top 0.3s;
+    z-index: 1000;
     text-align: center;
 }
- header h1 {
+header.visible {
+    top: 0;
+}
+header h1 {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    margin: 0;
   }
   header h1 svg {
     flex-shrink: 0;
   }
+  main {
+    padding-top: 100px; /* Ajusta este valor según la altura de tu header */
+}
+.content {
+    height: 2000px; /* Solo para demostración del scroll */
+}
+
 
 .nav-content {
     display: flex; /* Alineación horizontal */
@@ -52,6 +98,7 @@ header {
     color: #ffffff;
     text-decoration: none;
 }
+
 .saed {
     font-family: 'Gotham', sans-serif;
     font-size: 1.5rem;
@@ -65,6 +112,10 @@ header {
 }
 .logo3 {
     width: 250px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantén la proporción de la imagen */
+}
+.logo5 {
+    width: 200px; /* Ajusta el ancho de la imagen */
     height: auto; /* Mantén la proporción de la imagen */
 }
 
@@ -172,7 +223,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #00006c;
+    background-color: #131636;
     color: white;
     padding: 2rem 0;
     margin-top: 2rem;
