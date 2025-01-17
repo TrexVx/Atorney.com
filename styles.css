@@ -1,5 +1,4 @@
 @import url('https://fonts.cdnfonts.com/css/gotham');
-@import url('https://fonts.cdnfonts.com/s/14898/Gotham-Black.woff');
 @import url('https://fonts.cdnfonts.com/css/pricedown');
 /* Reset y estilos generales */
 * {
@@ -14,6 +13,10 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;   
     transition: background-color 0.3s ease;
 }
 
@@ -56,8 +59,6 @@ header h1 {
 .content {
     height: 2000px; /* Solo para demostración del scroll */
 }
-
-
 .nav-content {
     display: flex; /* Alineación horizontal */
     align-items: center; /* Centrar verticalmente */
@@ -154,7 +155,7 @@ main {
     text-align: center;
 }
 .card2 {
-    background-color: #ffbb00;
+    background-color: #5d7fdd;
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
@@ -205,8 +206,9 @@ main {
 
 /* Footer */
 footer {
-    background-color: #131636;
+    background-repeat: inherit;
     background-image: url(public/images/footer.png);
+    background-color: #611232;
     color: white;
     padding: 2rem 0;
     margin-top: 2rem;
@@ -397,7 +399,7 @@ footer {
 
 .category-item h3 {
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #3B82F6;
 }
 
 .category-item ul {
@@ -411,7 +413,6 @@ footer {
 .category-item a {
     color: white;
 }
-
 .data-request,
 .open-data {
     background-color: #212fd0;
@@ -548,9 +549,9 @@ section.no-bg,
 }
 /*Boton desplegable*/
 .dropdown {
-    display: block;
     font-size: medium;
     position: fixed;
+    width: 100%;
     left: 1250px;
     top: 50px;
     transform: translateY(-50%);
@@ -559,7 +560,7 @@ section.no-bg,
 
 .dropdown-button {
     font-family: 'Gotham Black', sans-serif;
-    background-color: #131636;
+    background-color: #13163600;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -584,8 +585,8 @@ section.no-bg,
 }
 
 .dropdown-content a {
-    color: #ffffff;
     border: 1px solid #131636;
+    color: #ffffff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -593,7 +594,7 @@ section.no-bg,
 }
 
 .dropdown-content a:hover {
-    background-color: #2f367f;
+    background-color: #333a87;
 }
 
 .show {
@@ -602,13 +603,13 @@ section.no-bg,
 
 /* Tema oscuro */
 .dark-theme .dropdown-button {
-    background-color: #131636;
+    background-color: #13163600;
     color: white;
 }
 
 .dark-theme .dropdown-content {
     background-color: #131636;
-    border: 1px solid #131636;
+    border: 1px solid #2d3748;
 }
 
 .dark-theme .dropdown-content a {
@@ -633,8 +634,6 @@ section.no-bg,
 .dropdown-button[aria-expanded="true"] .arrow-icon {
     transform: rotate(-135deg);
 }
-
-/* Menu desplegable */
 .sidebar {
     height: 100%;
     width: 200px;
@@ -677,10 +676,10 @@ section.no-bg,
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #131636;
+    background-color: #131636af;
     color: white;
     padding: 9px 13px;
-    border: 1px solid #ffffff42;
+    border: 1px solid #ffffffeb;
     border-radius: 20%;
     position: fixed;
     left: 0;
@@ -725,4 +724,206 @@ section.no-bg,
 
 .dark-theme .openbtn {
     background-color: #131636;
+}
+footer .footer-pleca {
+	background-image: url(/public/images/pleca.svg);
+	background-color: white;
+	background-repeat: repeat-x;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .departments2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.card3 {
+    background-color: #B09A5B;
+    padding: 2rem;
+    padding-top: 40px;
+    top: 50px;
+    left: 10px;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+}
+  .container3 {
+    font-family: 'Gotham', sans-serif;
+    font-size: 37px;
+    color: #ffffff;
+    font-weight: bolder;
+    margin: 0 auto;
+    position:static;
+    top: 50px;
+    left: 10px;
+    background-color: #611232;
+    padding: 2rem;
+    padding-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 36px 56px #000000;
+    width: 100%;
+    max-width: 800px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+  .container2 {
+    font-family: 'Gotham', sans-serif;
+    margin: 0 auto;
+    position:static;
+    top: 50px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 2rem;
+    padding-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 36px 56px #000000;
+    width: 100%;
+    max-width: 800px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+form {
+    font-family: 'Gotham', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-family: 'Gotham', sans-serif;
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-weight: bold;
+}
+.titulos{
+    font-family: 'Gotham', sans-serif;
+    font-size: 37px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+}
+.titulos2{
+    font-family: 'Gotham', sans-serif;
+    font-size: 37px;
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+}
+.sapd{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bolder;
+    background-color: #000000bb;
+}
+select{
+    font-family: 'Gotham', sans-serif;
+    font-size: 25px;
+}
+input, textarea {
+    font-family: 'Gotham', sans-serif;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.enviar{
+    font-weight: bold;
+    font-family: 'Gotham', sans-serif;
+    font-size: 25px;    
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #611232;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;    
+}
+.footer-bottom2 {
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 5px solid #ffffff;
+    border-radius: 10%;
+}
+.footer-bottom3 {
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 5px solid #000000;
+    border-radius: 10%;
+}
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.radio-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+.radio2-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.radio2-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.radio2-group input[type="radio2"] {
+    margin-right: 5px;
+}
+#otherReasonContainer {
+    display: none;
+    margin-top: 0.5rem;
+}
+#status {
+    font-family: 'Gotham', sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px; 
+    color: #000000;
+}
+.dark-theme .container2 {
+    background-color: #2d3748;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+.dark-theme h1 {
+    color: #e2e8f0;
+}
+.dark-theme label {
+    color: #e2e8f0;
+}
+.dark-theme input, .dark-theme textarea, .dark-theme select {
+    background-color: #4a5568;
+    border-color: #718096;
+    color: #e2e8f0;
 }
